@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning-Dom-04</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <div class="flex justify-center items-center h-screen bg-slate-300">
+
+        <div class="w-96 p-6 shadow-lg bg-white rounded-md">
+
+            <h1 class="text-3xl block text-center font-semibold text-indigo-700"><i class="fa-solid fa-building-columns"></i> OneBank</h1>
+            <hr class="mt-3">
+
+            <div class="mt-3">
+                <label class="block text-base mb-2" for="UserName">UserName</label>
+                <input id="inputEmail" class="border-2 rounded-md w-full text-base px-2 py-1 focus:outline-none focus:ring-0 focus:border-gray-400" type="text" id="UserName" placeholder="Enter UserName.."/>
+                <div id="error" class="text-xs text-red-600 font-semibold h-1.5"></div>
+            </div>
+
+            <div class="mt-3">
+                <label class="block text-base mb-2" for="password">Password</label>
+                <input id="inputPassword" class="border-2 rounded-md w-full text-base px-2 py-1 focus:outline-none focus:ring-0 focus:border-gray-400" type="password" id="password" placeholder="Enter Password.."/>
+                <div id="errors" class="text-xs text-red-600 font-semibold h-1.5"></div>
+            </div>
+
+            <div class="mt-3 flex justify-between items-center">
+
+                <div>
+                    <input type="checkbox"/>
+                    <label for="">Remember me</label>
+                </div>
+
+                <div>
+                    <a class="text-indigo-800 font-semibold hover:underline" href="#">Forget Password</a>
+                </div>
+
+            </div>
+
+            <div class="mt-5">
+                <button id="loginBtn" type="submit" class="border-2 border-indigo-700 bg-indigo-700 text-white py-1 w-full rounded-md hover:bg-transparent hover:text-indigo-700 font-semibold">Login</button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>

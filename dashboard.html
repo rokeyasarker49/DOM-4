@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneBank - Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="pt-5">
+
+    <div class="w-full">
+
+        <h1 class="text-3xl block text-center font-bold text-indigo-700"><i class="fa-solid fa-building-columns"></i> OneBank</h1>
+        <hr class="mt-3">
+
+        <div class="grid grid-cols-3">
+
+
+            <div class="bg-slate-200 p-3 m-5 rounded-md flex justify-between border border-indigo-800">
+                <h4 class="text-xl font-bold">Deposit</h4>
+                <h2 class="font-bold text-2xl">$<span id="previousDepositAmount">50</span></h2>
+            </div>
+
+            <div class="bg-slate-200 p-3 m-5 rounded-md flex justify-between border border-indigo-800">
+                <h4 class="text-xl font-bold">Withdraw</h4>
+                <h2 class="font-bold text-2xl">$<span id="previousWithdrowAmount">50</span></h2>
+            </div>
+
+            <div class="bg-slate-200 p-3 m-5 rounded-md flex justify-between border border-indigo-800">
+                <h4 class="text-xl font-bold">Balance</h4>
+                <h2 class="font-bold text-2xl">$<span id="previousBalanceAmount">1000</span></h2>
+            </div>
+
+
+        </div>
+
+        <div class="grid grid-cols-2 p-5 bg-slate-200 m-5 gap-5 rounded-md">
+
+            <div class="bg-white py-5 px-3 rounded-md">
+                <label class="block text-base mb-2 font-semibold" for="inputDeposit"><i class="fa-solid fa-money-check-dollar mr-1"></i> Deposit Amount</label>
+                <input id="depositInputBox" class="border-2 rounded-md w-full text-base focus:outline-none focus:ring-0 focus:border-gray-400 block w-full p-3" type="number" placeholder="Enter Your Deposit Amount" min="0">
+                <div id="error" class="text-xs text-red-600 font-semibold h-1.5"></div>
+                <button id="depositBtn" class="border-2 border-indigo-700 bg-indigo-700 text-white w-full rounded-md hover:bg-transparent hover:text-indigo-700 font-semibold p-2 mt-5"><i class="fa-solid fa-money-bill-transfer"></i> Deposit</button>
+            </div>
+
+            <div class="bg-white py-5 px-3 rounded-md">
+                <label class="block text-base mb-2 font-semibold" for="inputWithdrow"><i class="fa-solid fa-money-check-dollar mr-1"></i> Withdraw Amount</label>
+                <input id="withdrowInputBox" class="border-2 rounded-md w-full text-base focus:outline-none focus:ring-0 focus:border-gray-400 block w-full p-3" type="number" placeholder="Enter Your Withdrow Amount" min="0">
+                <div id="errors" class="text-xs text-red-600 font-semibold h-1.5"></div>
+                <button id="withdrowBtn" class="border-2 border-indigo-700 bg-indigo-700 text-white w-full rounded-md hover:bg-transparent hover:text-indigo-700 font-semibold p-2 mt-5"><i class="fa-solid fa-money-bill-transfer"></i> Withdrow</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    
+
+
+
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
